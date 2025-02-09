@@ -1,130 +1,61 @@
-eCommerce Website with Fraud Detection
+**Ecommerce Website with Fraud Detection**
 
-🚀 Overview
+**Overview**
 
-This project is a full-stack eCommerce platform with integrated fraud detection powered by machine learning. It enables secure online transactions, protects sellers from fraudulent activities, and ensures a seamless shopping experience for customers.
+This project is an ecommerce platform that integrates machine learning-based fraud detection to protect sellers from fraudulent activities. It ensures secure transactions and minimizes risks associated with online fraud.
 
-✨ Features
+**Problem We Solve**
 
-🛒 Product Listings & Search – Browse and filter products easily.
+Online transactions are prone to fraudulent activities, including fake orders, payment fraud, and account takeovers. This project aims to mitigate these risks by implementing AI-driven fraud detection, providing a secure environment for sellers and buyers.
 
-🔐 Secure User Authentication – Register, login, and manage accounts securely.
+**Features**
 
-💳 Payment Gateway Integration – Supports multiple payment options.
+  Secure payment processing
+  
+  AI-powered fraud detection system
+  
+  User authentication and authorization
+  
+  Real-time fraud alerts and risk scoring
+  
+  Responsive and intuitive UI for seamless shopping experience
 
-🤖 AI-Powered Fraud Detection – Detects suspicious transactions using ML models.
+**Challenges**
 
-📊 Admin Dashboard – Monitor orders, users, and flagged transactions.
+  Ensuring high accuracy in fraud detection while minimizing false positives
+  
+  Balancing security measures with user experience
+  
+  Processing large volumes of transaction data efficiently
+  
+  Integrating fraud detection seamlessly with payment gateways
 
-📦 Order Management – Track orders and manage shipments.
+**Tech Stack**
 
-📡 Real-time Notifications – Alerts for suspicious transactions.
+  **Frontend**: React.js using vite
+  
+  **Backend**: Node.js, Express.js
+  
+  **Database**: MongoDB
+  
+  **Machine Learning**: Python, Scikit-learn, TensorFlow
+  
+  **Hosting**: Vercel 
 
-🏗 Tech Stack
+**Security Measures**
 
-Frontend:
+  Multi-factor authentication for users
+  
+  End-to-end encrypted transactions
+  
+  AI-driven fraud detection and analysis
+  
+  Continuous monitoring and real-time alerts
 
-React.js (Vite) + Tailwind CSS
+**Future Improvements**
 
-Redux Toolkit (State Management)
+Implement blockchain-based transaction validation
 
-React Router (Navigation)
+Enhance fraud detection with deep learning models
 
-Backend:
-
-Node.js + Express.js
-
-MongoDB + Mongoose
-
-JWT Authentication
-
-Machine Learning for Fraud Detection:
-
-Python (Scikit-Learn, TensorFlow, Pandas)
-
-Fast API for ML integration
-
-Feature engineering on transaction data
-
-Deployment:
-
-Frontend: Vercel / Netlify
-
-Backend: AWS EC2 / Render / Heroku
-
-Database: MongoDB Atlas
-
-
-API Endpoints
-
-Method
-
-Endpoint
-
-Description
-
-GET
-
-/api/products
-
-Fetch all products
-
-POST
-
-/api/auth/register
-
-Register a new user
-
-POST
-
-/api/auth/login
-
-User authentication
-
-POST
-
-/api/orders
-
-Place an order
-
-POST
-
-/api/fraud/check
-
-Fraud detection API
-
-📊 Fraud Detection Model
-
-The fraud detection model is trained on transactional data using Supervised Learning (Logistic Regression, Random Forest, Neural Networks), Binary Classification. The ML model flags suspicious transactions, allowing admins to review and take action.
-
-🔒 Security & Compliance
-
-End-to-End Encryption (SSL/TLS)
-
-Role-Based Access Control (RBAC)
-
-Secure API Authentication (JWT Tokens)
-
-GDPR & PCI Compliance
-
-🛡 Fraud Prevention Strategies
-
-✅ Anomaly detection on user behavior✅ Pattern analysis for chargebacks✅ Velocity checks for high-risk transactions✅ Blacklisting of fraudulent accounts
-
-📌 Future Improvements
-
-🔍 Advanced AI models for real-time fraud analysis
-
-🏦 Integration with third-party fraud prevention services
-
-📉 Graph-based fraud detection for transaction networks
-
-🔄 Blockchain-based transaction verification
-
-🤝 Contributing
-
-Feel free to fork, open issues, or submit pull requests. Contributions are welcome!
-
-📄 License
-
-This project is licensed under the MIT License.
+Expand fraud detection capabilities across multiple payment gateways

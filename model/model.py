@@ -1,16 +1,14 @@
-# Import the necessary libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-import tensorflow as tf
-from tensorflow.python.keras.models import Sequential
-from tensorflow.python.keras.layers import Dense
-from tensorflow.python.keras.optimizer_v1 import Adam
-from tensorflow.python.keras.losses import BinaryCrossentropy
-from tensorflow.python.keras.activations import sigmoid
+import tensorflow.keras
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.losses import BinaryCrossentropy
+from tensorflow.keras.activations import sigmoid
 # from functions import cost_function
 
-# Load the data
 df = pd.read_csv('../dataset/Fraudulent_E-Commerce_Transaction_Data.csv')
 X_train = np.empty((0,9), int)
 y_train = np.empty((0,1), int)
@@ -26,7 +24,6 @@ for i in range (0,500):
 print(X_train.shape)
 print(y_train.shape)
 
-# Define the model
 def my_dense(a_in, W, b):
     units = W.shape[1]
     a_out = np.zeros(units)
@@ -44,7 +41,7 @@ def my_dense(a_in, W, b):
 
 model = Sequential(
     [
-        tf.keras.Input(shape=(9, )),
+        # tf.keras.Input(shape=(9, )),
         Dense(128,  activation='sigmoid'),
         Dense(64, activation='sigmoid'),
         Dense(32, activation='sigmoid')

@@ -21,7 +21,6 @@ def compute_gradient(X_train, y_train, W, b):
 def gradient_descent(X_train, y_train, w_in, b_in, alpha, num_iter):
     for i in range(num_iter):
         dj_dw, dj_db = compute_gradient(X_train, y_train, w_in, b_in)
-        w_in[i]
         # w_in = w_in - alpha*dj_dw
         # b_in = b_in - alpha*dj_db
     return w_in, b_in

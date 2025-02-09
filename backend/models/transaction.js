@@ -1,15 +1,14 @@
 import mongoose from 'mongoose';
-const Schema= mongoose.Schema();
 
 const transactionSchema = new mongoose.Schema(
     {
         user: {
-            type: Schema.Types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             ref: "User"
         },
         products: [
             {
-                type: Schema.Types.ObjectId,
+                type: mongoose.Schema.Types.ObjectId,
                 ref: "Product"
             }
         ],

@@ -34,11 +34,11 @@ Online transactions are prone to fraudulent activities, including fake orders, p
 
   **Frontend**: React.js using vite
   
-  **Backend**: Node.js, Express.js
+  **Backend**: Node.js Express.js
   
   **Database**: MongoDB
   
-  **Machine Learning**: Python, Scikit-learn, TensorFlow
+  **Machine Learning**: Python Scikit-learn TensorFlow
   
   **Hosting**: Vercel 
 

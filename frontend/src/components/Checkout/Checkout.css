@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.image{
+    width:200px;
+    float: left;
+}
+.checkout{
+    display: flex;
+}
+.Box{
+    margin-left: 10px;
+    width: 180px;
+
+}
+.checkout_subtotal{
+    height: 80px;
+    background-color: white;
+    margin-bottom: 10px;
+}
